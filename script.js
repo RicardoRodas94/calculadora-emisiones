@@ -19,11 +19,11 @@ document.getElementById('formulario').addEventListener('submit', function(e) {
     emoji = '🟢';
   } else if (co2 < 8) {
     nivel = 'Media';
-    mensaje = '🌍 Tu medio de transporte genera cambios en el medio ambiente. Puedes intercalar usar bicicleta y transporte público.';
+    mensaje = '🌍 Tu medio de transporte puede afectar de alguna manera el medio ambiente. Puedes icluir el usar bicicleta y transporte público en tu semana.';
     emoji = '🟡';
   } else {
     nivel = 'Alta';
-    mensaje = '🔥 Tu impacto genera cambios significativos en el medio ambiente. Se recomienda buscar medios alternativos de transporte y sustituir el uso del automóvil.';
+    mensaje = '🔥 Tu medio de transporte cotidiano puede generar cambios significativos en el medio ambiente. Se recomienda buscar medios alternativos de transporte (bicicleta, transporte público, etc) y sustituir el uso del automóvil. Promueve el compartir automovil con vecinos y familiares';
     emoji = '🔴';
   }
 
