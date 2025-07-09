@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Emisiones de CO₂</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌱 Calculadora de Emisiones de CO₂</h1>
+    <form id="formulario">
+      <label>
+        Cilindraje (cc):
+        <input type="number" id="cilindraje" required min="50" />
+      </label>
+      <label>
+        Distancia recorrida (km):
+        <input type="number" id="distancia" required min="1" />
+      </label>
+      <label>
+        Rendimiento (km por litro):
+        <input type="number" id="rendimiento" required min="1" step="0.1" />
+      </label>
+      <label>
+        Tipo de combustible:
+        <select id="combustible" required>
+          <option value="gasolina">Gasolina</option>
+          <option value="diesel">Diésel</option>
+        </select>
+      </label>
+      <button type="submit">Calcular Huella</button>
+    </form>
+    <div id="resultado"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
